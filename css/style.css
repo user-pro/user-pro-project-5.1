@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+/*==========================================обнуление======================================================================*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0px;
+  border: 0px;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 4-18 */
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 19+ */
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* IE 10+ */
+
+/*==========================================обнуление======================================================================*/
+
+/*==========================================Шрифт==========================================================================*/
+
+/*==========================================Шрифт==========================================================================*/
+
+/*==========================================Медиа==========================================================================*/
+
+/*==========================================Медиа==========================================================================*/
+.page-wrapper{
+  position: absolute;
+  z-index: 3;
+}
+.particles{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: 0px 15px;
+}
+
+body {
+  /* overflow: hidden; */
+  font-weight: 700;
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+._lock {
+  overflow: hidden;
+}
+
+/*==========================================header=========================================================================*/
+
+/*==========================================splash-screen=========================================================================*/
+
+.splash-screen {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.splash-screen .container {
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.splash-screen__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.splash-screen__flex-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.splash-flex-container {
+  margin: 70px 0px 30px 0px;
+}
+
+.splash-flex-container__row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.splash-flex-container__row-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.heptagon {
+  display: inline-block;
+  padding: 30px 10px;
+  margin: 30px 30px 0px 30px;
+  outline: none;
+  height: 160px;
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #038681;
+  background-position: 0 0;
+  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+          clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.heptagon:hover {
+  background-color: #084240;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.heptagon span {
+  text-align: center;
+  max-height: 100px;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.heptagon-1,
+.heptagon-2,
+.heptagon-3 {
+  margin: 0px 30px 0px 30px;
+}
+
+/*==========================================splash-screen=========================================================================*/
+
+@media (max-width: 1024px) {
+  .heptagon {
+    margin: 30px 30px 0px 30px;
+  }
+}
+
+@media (max-width: 496px) {
+  .heptagon {
+    height: 170px;
+    width: 170px;
+  }
+  .particles{
+    height: 200vh;
+  }
+}
+@media (max-height: 700px) and (max-width: 496px) {
+  .particles{
+    height: 220vh;
+  }
+}
+@media (max-height: 600px) and (max-width: 496px) {
+  .particles{
+    height: 240vh;
+  }
+}
+@media (max-height: 500px) and (max-width: 496px) {
+  .particles{
+    height: 300vh;
+  }
+}
+@media (max-height: 400px) and (max-width: 496px) {
+  .particles{
+    height: 190vh;
+  }
+}
+
+
